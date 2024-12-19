@@ -1,0 +1,62 @@
+[
+    {
+        "server_name": "Origin Realms",
+        "features": [
+            "Custom texture pack",
+            "Cosmetics",
+            "Hub with NPCs",
+            "Cutscenes",
+            "Auction house"
+        ],
+        "player_engagement": "Survival based gameplay with unique features that enhance the experience.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "A unique survival experience reminiscent of Hypixel Skyblock but distinctly different."
+    },
+    {
+        "server_name": "Mineclub",
+        "features": [
+            "Unique minigames"
+        ],
+        "player_engagement": "Offers unique minigames but is currently not very active.",
+        "issues": [
+            "Server is pretty dead at the moment."
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Unique minigames not found on other servers."
+    },
+    {
+        "server_name": "Tubnet",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Upcoming server by popular Minecraft streamer Tubbo."
+    },
+    {
+        "server_name": "MCC Island",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Server made by Noxcrew, creators of the MCC event."
+    },
+    {
+        "server_name": "Hidraway",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Upcoming server that is not yet released."
+    }
+]

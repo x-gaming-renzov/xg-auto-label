@@ -1,0 +1,503 @@
+[
+    {
+        "server_name": "Godlike",
+        "features": [
+            "Supports custom modpacks",
+            "Incredible modded experiences"
+        ],
+        "player_engagement": "Players can create their own modded server for unique gameplay experiences.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Custom modded gameplay with personalized experiences."
+    },
+    {
+        "server_name": "Wynncraft",
+        "features": [
+            "Full MMORPG",
+            "5 classes with 15 total archetypes",
+            "Ability tree with ~75 potential upgrades per class",
+            "Huge map with secret discoveries",
+            "130 quests and dungeons",
+            "Unique bosses with advanced mechanics",
+            "Updated music"
+        ],
+        "player_engagement": "Players engage in a rich MMORPG experience with a vast world to explore, quests to complete, and challenging bosses to defeat.",
+        "issues": [
+            "The game can become harder with updates, which may not appeal to all players."
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "MMORPG experience with RPG elements and unique boss mechanics."
+    },
+    {
+        "server_name": "Event-Based Server",
+        "features": [
+            "Event-based gameplay on Fridays"
+        ],
+        "player_engagement": "Players can hang out and participate in events with others.",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Event-based gameplay that occurs specifically on Fridays."
+    },
+    {
+        "server_name": "PotterworldMC",
+        "features": [
+            "Harry Potter theme",
+            "Unique game modes related to the Harry Potter universe"
+        ],
+        "player_engagement": "Players engage with the magical world of Harry Potter, participating in themed quests and activities.",
+        "comment_section_reference": "If you like Harry Potter then the only server around that theme is PotterworldMC. They have been around for years and is pretty unique! [https://mc-servers.com/server/1890](https://mc-servers.com/server/1890)",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "Themed quests and magical activities based on the Harry Potter series."
+    },
+    {
+        "server_name": "Incubo",
+        "features": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "coming 2025"
+    },
+    {
+        "server_name": "Purple Prison",
+        "features": [
+            "wild custom plugins"
+        ],
+        "player_engagement": "Players find it engaging due to the unique custom plugins that differ from typical Minecraft gameplay.",
+        "comment_section_reference": "Reddit post about unique Minecraft servers",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "A prison-themed gameplay mode where players must complete tasks and challenges to progress."
+    },
+    {
+        "server_name": "Medieval Minecraft Server",
+        "features": [
+            "Medieval-themed gameplay",
+            "Weekly tasks to complete",
+            "Voice chat required for participation",
+            "Separate continents assigned to players",
+            "Royalty system (kings, queens, etc.)",
+            "Bedwars tournaments on Hive"
+        ],
+        "player_engagement": "Players engage actively by completing tasks, communicating via voice chat on Discord, and participating in social activities and tournaments.",
+        "issues": [
+            "Requires Discord with voice chat, limiting accessibility",
+            "One user mentioned it as a terrible server"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Medieval-themed gameplay with a focus on tasks and a royalty system."
+    },
+    {
+        "server_name": "HOODCRAFT",
+        "features": [
+            "best cobblemon server",
+            "beginner friendly",
+            "experience"
+        ],
+        "player_engagement": "Players find it funny and engaging, attracting both new and experienced players.",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "cobblemon server"
+    },
+    {
+        "server_name": "Purple Prison",
+        "features": [
+            "unique custom plugins"
+        ],
+        "player_engagement": "It's really fun tbh",
+        "issues": [
+            "crate keys you have to pay with real money"
+        ],
+        "comment_section_reference": "Reddit post - Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Prison oriented server with unique plugins."
+    },
+    {
+        "server_name": "mcDiamondFire",
+        "features": [
+            "infinite minigames",
+            "players can build their own minigames"
+        ],
+        "player_engagement": "Players can create their own minigames using a coding system similar to Scratch but adapted for Minecraft.",
+        "unique_game_mode": "Custom minigame creation allowing players to code their own games using Minecraft blocks.",
+        "comment_section_reference": "Reddit post about unique Minecraft servers",
+        "upvotes": 20,
+        "downvotes": 96
+    },
+    {
+        "server_name": "CatCraft",
+        "features": [
+            "Player-driven diamond economy",
+            "Monthly updates & events",
+            "Marketplace for running shops",
+            "Claim land to prevent griefing",
+            "Quality-of-life features"
+        ],
+        "player_engagement": "Players engage through a friendly community, participating in events, running shops in the marketplace, and claiming land for their builds.",
+        "issues": [
+            "Strict chat filter for family-friendliness"
+        ],
+        "comment_section_reference": "Reddit post about unique Minecraft servers",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Survival with a persistent Overworld that never resets."
+    },
+    {
+        "server_name": "Minewind",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": ""
+    },
+    {
+        "server_name": "Minewizards",
+        "features": [
+            "custom Dungeons",
+            "epic bosses",
+            "RPG adventures"
+        ],
+        "player_engagement": "Players engage in Survival mode with custom dungeons and RPG adventures, creating a thrilling gameplay experience.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Survival with custom Dungeons and RPG elements."
+    },
+    {
+        "server_name": "MineWizards",
+        "features": [
+            "Custom Roleplay",
+            "Dungeons",
+            "Leveling",
+            "Jobs"
+        ],
+        "player_engagement": "Players engage by participating in roleplay scenarios and completing dungeons, which enhance their characters through leveling and job systems.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "Custom Roleplay with Dungeons and a leveling system."
+    },
+    {
+        "server_name": "play.randomblock.org:25577",
+        "features": [
+            "Get a random item every 10 seconds",
+            "Spawn in a void world"
+        ],
+        "player_engagement": "Players engage by utilizing the random items they receive every 10 seconds in a void world context.",
+        "unique_game_mode": "Random item generation every 10 seconds in a void world setup."
+    },
+    {
+        "server_name": "OPEN TO PUBLIC Minecraft Modpack",
+        "features": [
+            "Territory claiming",
+            "Custom terrain generation",
+            "New dungeons and points of interest (POIs)"
+        ],
+        "player_engagement": "Players engage by exploring an expansive world and claiming territories in the SMP environment.",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "SMP with territory claiming and custom terrain generation."
+    },
+    {
+        "server_name": "Extraction Dungeon",
+        "features": [
+            "Dungeon looting",
+            "Expansive list of other features"
+        ],
+        "player_engagement": "Players engage by participating in the dungeon looting game mode and contributing to server development discussions on Discord.",
+        "unique_game_mode": "Extraction dungeon looting game mode",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0
+    },
+    {
+        "server_name": "Origin Realms",
+        "features": [
+            "Custom texture pack",
+            "Cosmetics",
+            "Hub with NPCs",
+            "Cutscenes",
+            "Auction house"
+        ],
+        "player_engagement": "Survival based gameplay with unique features that enhance the experience.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "A unique survival experience reminiscent of Hypixel Skyblock but distinctly different."
+    },
+    {
+        "server_name": "Mineclub",
+        "features": [
+            "Unique minigames"
+        ],
+        "player_engagement": "Offers unique minigames but is currently not very active.",
+        "issues": [
+            "Server is pretty dead at the moment."
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Unique minigames not found on other servers."
+    },
+    {
+        "server_name": "Tubnet",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Upcoming server by popular Minecraft streamer Tubbo."
+    },
+    {
+        "server_name": "MCC Island",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Server made by Noxcrew, creators of the MCC event."
+    },
+    {
+        "server_name": "Hidraway",
+        "features": [],
+        "player_engagement": "",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Upcoming server that is not yet released."
+    },
+    {
+        "server_name": "Custom World Generation Server",
+        "features": [
+            "Complete overhaul on world generation in all dimensions",
+            "Custom dimensions",
+            "Unique enchantments",
+            "Vehicles"
+        ],
+        "player_engagement": "Players can explore custom worlds and dimensions, utilizing unique enchantments and vehicles for a richer gameplay experience.",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "Custom world generation and exploration."
+    },
+    {
+        "server_name": "Wynncraft",
+        "features": [
+            "MMORPG",
+            "Custom scripts",
+            "Custom resources"
+        ],
+        "player_engagement": "Players become highly invested in the RPG elements and world-building.",
+        "comment_section_reference": "Not sure if you're still looking but I'm surprised nobody mentioned Wynn-craft; it's an entire mmorpg made in Minecraft with tons of custom scripts, resources and such.",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "An MMORPG experience created within Minecraft."
+    },
+    {
+        "server_name": "Monumenta",
+        "features": [
+            "unique quests",
+            "custom builds"
+        ],
+        "player_engagement": "Players engage in epic quests and explore custom-built environments.",
+        "issues": [
+            "Some quests can be overly complex",
+            "Long wait times for server responses"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Quest-based adventure in a custom world."
+    },
+    {
+        "server_name": "Slimefun",
+        "features": [
+            "modpack-like experience",
+            "extensive plugins"
+        ],
+        "player_engagement": "Players create and manage complex machines and factories using plugins.",
+        "issues": [
+            "Learning curve can be steep for new players",
+            "Server can lag with too many players"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Plugin-based modpack experience."
+    },
+    {
+        "server_name": "Horizons End",
+        "features": [
+            "space exploration",
+            "similar to No Man's Sky"
+        ],
+        "player_engagement": "Players explore space and visit various planets with unique resources.",
+        "issues": [
+            "Limited player base",
+            "Some features are still in development"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Space exploration with unique planets."
+    },
+    {
+        "server_name": "Wynncraft",
+        "features": [
+            "RPG elements",
+            "custom quests"
+        ],
+        "player_engagement": "Players embark on quests and level up their characters in a fantasy world.",
+        "issues": [
+            "Balancing issues with some classes",
+            "Occasional bugs in quests"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Minecraft MMORPG with a rich story."
+    },
+    {
+        "server_name": "Hypixel",
+        "features": [
+            "mini-games",
+            "custom game modes"
+        ],
+        "player_engagement": "Players engage in various mini-games and competitions.",
+        "issues": [
+            "Some mini-games can be pay-to-win",
+            "Long waiting queues for popular games"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Variety of mini-games and competitions."
+    },
+    {
+        "server_name": "Origin Realms",
+        "features": [
+            "custom biomes",
+            "adventure maps"
+        ],
+        "player_engagement": "Players explore unique biomes and complete adventure maps.",
+        "issues": [
+            "Some biomes can feel empty",
+            "Limited content compared to larger servers"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Adventure-based exploration with custom biomes."
+    },
+    {
+        "server_name": "Blackdragon Prisons",
+        "features": [
+            "Custom Enchantments",
+            "Prestige System",
+            "Dynamic Events",
+            "Player-Driven Economy"
+        ],
+        "player_engagement": "Connect with a vibrant and friendly community of players who share your passion for Minecraft. Collaborate on projects, form alliances, or compete against each other to become the ultimate Blackdragon champion.",
+        "unique_game_mode": "A captivating world filled with unique challenges, quests, and custom features.",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96
+    },
+    {
+        "server_name": "DeadMC",
+        "features": [
+            "Zombie apocalypse theme",
+            "Unique zombies that can climb, fly, explode, and shoot",
+            "Town creation and joining",
+            "Skill leveling",
+            "Player-owned shops",
+            "Custom items like auto-reloading cross-bows and quivers"
+        ],
+        "player_engagement": "Players engage by joining or creating towns, completing tasks, and leveling up skills. There's an active community since 2017.",
+        "issues": [
+            "Some comments suggest the server has low player activity",
+            "Perception of being 'dead' based on comments"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Zombie apocalypse with unique challenges and community-driven gameplay."
+    },
+    {
+        "server_name": "voidwars.primearca.de",
+        "features": [
+            "Extraction game mode",
+            "Randomly generated dungeons",
+            "Loot and item collection",
+            "Competing for loot",
+            "Fighting mobs",
+            "Solving puzzles",
+            "Crafting weapons and armor"
+        ],
+        "player_engagement": "Players queue for games, engage in dungeon exploration, and compete for loot while solving puzzles and fighting mobs.",
+        "issues": [
+            "Server was using an out of date version of Minecraft",
+            "Low player count (only 4 people online)"
+        ],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Extraction game mode where players lose everything upon death and keep loot if they survive."
+    },
+    {
+        "server_name": "play.1hour1life.net",
+        "features": [
+            "unique game mode of 1 hour life simulation"
+        ],
+        "player_engagement": "Players engage by living out a life in the game that lasts only one hour, creating a unique narrative experience.",
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 1,
+        "downvotes": 0,
+        "unique_game_mode": "Players have to make the most of a short one-hour life, impacting the world and other players in a limited time."
+    },
+    {
+        "server_name": "gtamc",
+        "features": [
+            "No in-game purchases",
+            "All cheat codes obtainable by playing the game",
+            "Non pay to win"
+        ],
+        "player_engagement": "Players are drawn back to the server for nostalgia and community engagement, despite not being a staff member.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 0,
+        "downvotes": 0,
+        "unique_game_mode": "Nostalgic gameplay with cheat codes available through gameplay."
+    },
+    {
+        "server_name": "RSMV.net",
+        "features": [
+            "Labyrinth",
+            "Story Book"
+        ],
+        "player_engagement": "Players engage with the Labyrinth by trying to solve puzzles and escape, while Story Book offers various fun Minecraft maps to explore.",
+        "issues": [],
+        "comment_section_reference": "Are there any unique Minecraft servers?",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Labyrinth is a unique puzzle game mode filled with lore that took 7 years to create."
+    }
+]

@@ -1,0 +1,1 @@
+{'body': "We're doing a event-based server on Fridays if you want to join, it is pretty fun and you'll get to hang out with other people, here's the IP [45.43.163.18:25504](http://45.43.163.18:25504)", 'replies': []} 

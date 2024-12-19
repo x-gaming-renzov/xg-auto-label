@@ -1,0 +1,20 @@
+[
+    {
+        "server_name": "CatCraft",
+        "features": [
+            "Player-driven diamond economy",
+            "Monthly updates & events",
+            "Marketplace for running shops",
+            "Claim land to prevent griefing",
+            "Quality-of-life features"
+        ],
+        "player_engagement": "Players engage through a friendly community, participating in events, running shops in the marketplace, and claiming land for their builds.",
+        "issues": [
+            "Strict chat filter for family-friendliness"
+        ],
+        "comment_section_reference": "Reddit post about unique Minecraft servers",
+        "upvotes": 20,
+        "downvotes": 96,
+        "unique_game_mode": "Survival with a persistent Overworld that never resets."
+    }
+]

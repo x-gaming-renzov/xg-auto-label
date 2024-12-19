@@ -1,0 +1,1 @@
+{'body': '[play.randomblock.org:25577](http://play.randomblock.org:25577) \nget a random item every 10 seconds. You spawn in a void world where anything but hacking is allowed.', 'replies': []} 
