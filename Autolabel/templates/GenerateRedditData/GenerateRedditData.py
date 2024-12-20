@@ -12,9 +12,15 @@ def get_graph():
     graph = StateGraph(GenerateRedditDataState)
 
     graph.add_node("generate_reddit_data", generate_reddit_data)
+    graph.add_node("generate_reddit_comments_from_subreddit", generate_reddit_comments_from_subreddit)
+    graph.add_node("generate_relevance", generate_relevance)
+    graph.add_node("generate_task_info", generate_task_info)
 
     graph.add_edge(START, "generate_reddit_data")
-    graph.add_edge("generate_reddit_data", END)
+    graph.add_edge("generate_reddit_data", "generate_reddit_comments_from_subreddit")
+    graph.add_edge("generate_reddit_comments_from_subreddit", "generate_relevance")
+    graph.add_edge("generate_relevance", "generate_task_info")
+    graph.add_edge("generate_task_info", END)
 
     compiled_graph = graph.compile()
 
@@ -31,6 +37,7 @@ def run(user_id, subreddits, kb_data, reddit_client_id, reddit_client_secret, re
         "cache_path": cache_path,
         "reddit_client_id": reddit_client_id,
         "reddit_client_secret": reddit_client_secret,
-        "reddit_user_agent": reddit_user_agent
+        "reddit_user_agent": reddit_user_agent,
+        "user_id": user_id
     })
     return final_state

@@ -24,6 +24,7 @@ class XGMemoryClient:
         self.user_name = user_name
 
     def add_kb_memory(self, kb_memory):
+        #print(self.user_name)
         self.memory.add(kb_memory, user_id=self.user_name, prompt="""
                         Study what user wants to do, what is he doing currently, 
                         divide whole kb based on meaningfull sections and save them as separate memories""")
