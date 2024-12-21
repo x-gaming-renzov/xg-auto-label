@@ -10,21 +10,23 @@ from .states.states import *
 from ..ExtractJson import ExtractJson
 from ...loader.reddit.XGReddit import XGReddit
 
+from ...utils.llm_utils import LLM
+
 import pandas as pd
 
 dotenv.load_dotenv()
 
 class RedditData:
-    def __init__(self, subreddits, kb_data, reddit_client_id, reddit_client_secret, reddit_user_agent, status="Not started"):
+    def __init__(self, subreddits, kb_data, reddit_client_id, reddit_client_secret, reddit_user_agent, status="Not started", user_id=None, reddit_posts_processed=[]):
         self.subreddits = subreddits
         self.kb_data = kb_data
         self.reddit_client_id = reddit_client_id
         self.reddit_client_secret = reddit_client_secret
         self.reddit_user_agent = reddit_user_agent
-        self.user_id = uuid.uuid4().hex 
+        self.user_id = user_id if user_id is not None else str(uuid.uuid4()) #"4f44875dcfc4487eb4a1d55ddc03c299" #uuid.uuid4().hex 
         self.cache_path = os.getcwd() + "/cache/generate_reddit_data/" + self.user_id
         self.status = status
-        self.reddit_posts_processed = []
+        self.reddit_posts_processed = reddit_posts_processed
 
     def __str__(self):
         return f"GenerateRedditDataState(subreddits={self.subreddits}, kb_data={self.kb_data}, cache_path={self.cache_path}, reddit_client_id={self.reddit_client_id}, reddit_client_secret={self.reddit_client_secret}, reddit_user_agent={self.reddit_user_agent}, user_id={self.user_id})"
@@ -41,7 +43,8 @@ class RedditData:
             "reddit_client_secret": self.reddit_client_secret,
             "reddit_user_agent": self.reddit_user_agent,
             "user_id": self.user_id,
-            "status": self.status
+            "status": self.status,
+            "reddit_posts_processed": self.reddit_posts_processed
         }
 
     @staticmethod
@@ -49,11 +52,12 @@ class RedditData:
         return RedditData(
             subreddits=data["subreddits"],
             kb_data=data["kb_data"],
-            cache_path=data["cache_path"],
             reddit_client_id=data["reddit_client_id"],
             reddit_client_secret=data["reddit_client_secret"],
             reddit_user_agent=data["reddit_user_agent"],
-            user_id=data["user_id"]
+            user_id=data["user_id"],
+            status=data["status"],
+            reddit_posts_processed=data["reddit_posts_processed"]
         )
     
     def save(self):
@@ -146,7 +150,27 @@ It has {post["upvotes"]} upvotes and {post["num_comments"]} comments.
                 data=comments,
             )
             pathlib.Path(self.cache_path + f"/subreddit_data/{post['subreddit']}/{post['post_id']}/data").mkdir(parents=True, exist_ok=True)
-            with open(self.cache_path + f"/subreddit_data/{post['subreddit']}/{post['post_id']}/data/data.json", "w") as f:
+
+            llm = LLM()
+            response = llm.send_message(
+                prompt=f"""
+Create a name for the file that contains the data generated from the comments of the Reddit post.
+name of post: {post['title']}
+subreddit: {post['subreddit']}
+What is collected: {post['task_info']}
+Why is it collected: {post['relevance']}
+
+Return only name of the file without any extension in json format.
+
+Answer format: 
+
+    "file_name": "name_of_file"
+
+"""
+            )
+            
+
+            with open(self.cache_path + f"/subreddit_data/{post['subreddit']}/{post['post_id']}/data/{json.loads(response)["file_name"]}.json", "w") as f:
                 f.write(json.dumps(post_data, indent=4))
             self.reddit_posts_processed.append([post["post_id"], post["subreddit"]])
 
@@ -166,10 +190,31 @@ It has {post["upvotes"]} upvotes and {post["num_comments"]} comments.
         dfs = self.get_relevant_posts()
         for subreddit in dfs:
             print(colored(f"Generating data for {subreddit}", "blue"))
+            print(dfs[subreddit].index.to_list())
             self.generate(posts=dfs[subreddit].index.to_list()[:num_posts])
             print(colored(f"Data generated for {subreddit}", "blue"))
+        print("--------------------------------------------")
+        print(colored("Saving progress", "cyan"))
+        self.save()
+        print(colored("Progress saved", "cyan"))
         print(colored("Data generated successfully", "cyan"))
     
+    def get_reddit_posts_processed(self, zip_file_path):
+        """create a zip file of all the files generated
+        Structure of zip file:
+        {subreddit_name}:
+            {post_id}:
+                {file_name}.json
+        """
+        import zipfile
+        with zipfile.ZipFile(zip_file_path, 'w') as zipf:
+            for post_id, subreddit in self.reddit_posts_processed:
+                data_dir = self.cache_path + f"/subreddit_data/{subreddit}/{post_id}/data"
+                for file in os.listdir(data_dir):
+                    zipf.write(data_dir + "/" + file, f"{subreddit}/{file}")
+        return zip_file_path
+
+
 
 
 
