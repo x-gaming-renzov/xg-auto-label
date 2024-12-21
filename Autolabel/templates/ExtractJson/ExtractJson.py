@@ -24,7 +24,7 @@ def get_graph():
 
     return compiled_graph
 
-def run(task_info, user_id, chunk_context, data, json_object_context=None):
+def run(task_info, user_id, chunk_context, data : List, json_object_context=None):
     cache_path = f"{os.getcwd()}/cache/ExtractJson/{user_id}/"
     os.makedirs(cache_path, exist_ok=True)
 

@@ -174,7 +174,7 @@ Answer format:
                 f.write(json.dumps(post_data, indent=4))
             self.reddit_posts_processed.append([post["post_id"], post["subreddit"]])
 
-        return "Comments generated successfully"
+        return "Data generated successfully"
     
     def run(self, num_posts=3):
         print(colored("Running GenerateRedditData", "cyan"))
