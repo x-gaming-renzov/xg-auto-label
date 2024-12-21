@@ -25,12 +25,12 @@ def get_graph():
     return compiled_graph
 
 def run(task_info, user_id, chunk_context, data, json_object_context=None):
-    cache_path = f"{os.getcwd()}/cache/{user_id}/"
+    cache_path = f"{os.getcwd()}/cache/ExtractJson/{user_id}/"
     os.makedirs(cache_path, exist_ok=True)
 
     with open(f"{cache_path}/data.txt", "w") as f:
-        f.write(data)
-    
+        data = [f"{str(i)}\n\n" for i in data]
+        f.writelines(data)
     data = None
 
     compiled_graph = get_graph()

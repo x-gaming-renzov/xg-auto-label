@@ -236,6 +236,7 @@ def generate_task_info(GenerateRedditDataState : GenerateRedditDataState) -> Gen
 
             for post in posts:
                 post_id = post["post_id"]
+                post["subreddit"] = subreddit
                 print(colored(f"Creating folder for post {post_id}", "yellow"))
                 post_path = os.path.join(GenerateRedditDataState.cache_path, f"subreddit_data/{subreddit}/{post_id}")
                 pathlib.Path(post_path).mkdir(parents=True, exist_ok=True)

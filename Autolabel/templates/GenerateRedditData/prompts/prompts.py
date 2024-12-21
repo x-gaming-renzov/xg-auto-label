@@ -49,6 +49,11 @@ You want to create a labeled data from all comments in this post. For this You n
 
 "task_info" : what insight to fetch from each comment section or a 3-4 liner task of what information to fetch
 
+Rules :
+1. Purpose of task_info is to give a clear idea to teammate what to fetch from comments and what is relevant to task. 
+2. Task_info should be clear and concise.
+3. Better task info are ones which instructs teamemate to not fill garbage data and only fill relevant data. 
+
 Example : 
 Post name : Are there any unique Minecraft servers?
 Task_info : make list of minecraft servers discussed here, put fields about what features are liked and what are the problems with those servers 
