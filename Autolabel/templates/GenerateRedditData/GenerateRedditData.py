@@ -170,7 +170,7 @@ Answer format:
             )
             
 
-            with open(self.cache_path + f"/subreddit_data/{post['subreddit']}/{post['post_id']}/data/{json.loads(response)["file_name"]}.json", "w") as f:
+            with open(self.cache_path + f"/subreddit_data/{post['subreddit']}/{post['post_id']}/data/{json.loads(response)['file_name']}.json", "w") as f:
                 f.write(json.dumps(post_data, indent=4))
             self.reddit_posts_processed.append([post["post_id"], post["subreddit"]])
 
