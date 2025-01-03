@@ -1,8 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional, Dict, Any
 
-from ....memory.XGMemoryClient import XGMemoryClient
-
 class GenerateRedditDataState(BaseModel):
     subreddits: List[str] 
     kb_data : str

@@ -23,7 +23,7 @@ class XGMemoryClient:
         self.memory = Memory.from_config(config)
         self.user_name = user_name
 
-    def add_kb_memory(self, kb_memory):
+    def add_kb_memory(self, kb_memory : str):
         #print(self.user_name)
         self.memory.add(kb_memory, user_id=self.user_name, prompt="""
                         Study what user wants to do, what is he doing currently, 

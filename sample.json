@@ -1,0 +1,68 @@
+[
+    {
+      "evnt": "player_join",
+      "pid": "player_12345",
+      "time": "2024-11-21T10:00:00Z",
+      "loc": { "x": 100, "y": 64, "z": -300 },
+      "details": { "msg": "Player joined the game" }
+    },
+    {
+      "evnt": "block_break",
+      "pid": "player_12345",
+      "time": "2024-11-21T10:05:00Z",
+      "loc": [{ "x": 105, "y": 65, "z": -310, "servers" : [
+        {
+          "server_id": "server_1",
+          "server_name": "Survival",
+          "server_type": "PvE"
+        }
+      ]}],
+      "details": {
+        "block": "stone",
+        "tool": "diamond_pickaxe",
+        "dropping": ["cobblestone"]
+      }
+    },
+    {
+      "evnt": "chat_message",
+      "pid": "player_67890",
+      "time": "2024-11-21T10:10:00Z",
+      "details": {
+        "msg": "Anyone up for a raid?",
+        "chat_channel": "global"
+      }
+    },
+    {
+      "evnt": "player_death",
+      "pid": "player_12345",
+      "time": "2024-11-21T10:15:00Z",
+      "loc": { "x": 120, "y": 63, "z": -320 },
+      "details": {
+        "cause": "fall_damage",
+        "killer": null,
+        "items_dropped": ["diamond_pickaxe", "iron_helmet"]
+      }
+    },
+    {
+      "evnt": "mob_kill",
+      "pid": "player_67890",
+      "time": "2024-11-21T10:20:00Z",
+      "loc": { "x": 150, "y": 70, "z": -200 },
+      "details": {
+        "mob_type": "zombie",
+        "tool_used": "iron_sword",
+        "dropped_items": ["rotten_flesh", "iron_ingot"]
+      }
+    },
+    {
+      "evnt": "item_craft",
+      "pid": "player_12345",
+      "time": "2024-11-21T10:25:00Z",
+      "loc": { "x": 100, "y": 64, "z": -300 },
+      "details": {
+        "crafted_item": "golden_apple",
+        "ingredients_used": ["gold_ingot", "apple"]
+      }
+    }
+  ]
+  

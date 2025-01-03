@@ -1,0 +1,200 @@
+{
+    "field_mapping": {
+        "details.ingredients_used.item": "List of Specific Ingredients Used in Recipes",
+        "details.crafted_item": "crafted_game_items",
+        "details.dropping.item": "dropped_items_in_event_or_action",
+        "details.mob_type": "game_entity_type",
+        "details.block": "Material Type of Block Used in Construction or Design",
+        "details.msg": "Player Interaction and Activity Messages",
+        "loc.item.x": "Item Horizontal Position X-Coordinate",
+        "loc.y": "Vertical Coordinate Position in 2D Space",
+        "loc.item.z": "Vertical Position of Item in 3D Space (in meters)",
+        "details.items_dropped.item": "List of Items Dropped During Gameplay Events (e.g., diamond pickaxes, iron helmets)",
+        "loc.x": "Horizontal Position on X-Axis",
+        "loc.z": "VerticalPositionOrElevationRelativeToZero",
+        "details.dropped_items.item": "List of Dropped Items and Resources",
+        "loc.item.servers.item.server_id": "unique_server_identifier",
+        "evnt": "Game Event Types and Actions",
+        "details.tool": "Type of Tool Being Used (e.g., Diamond Pickaxe)",
+        "loc.item.y": "Item Vertical Position in Units (e.g., pixels or meters)",
+        "details.cause": "Incident Reason or Cause of Incident",
+        "details.chat_channel": "type_of_chat_channel_accessibility",
+        "loc.item.servers.item.server_name": "Type of Gameplay Server (e.g., Survival, Creative, Adventure)",
+        "details.tool_used": "specific_tools_or_weapons_used_in_activities",
+        "time": "timestamp_in_ISO_8601_format_UTC",
+        "loc.item.servers.item.server_type": "Type of Game Server (e.g., Player vs Environment, PvE)",
+        "pid": "Unique Player Identifier (UPI)"
+    },
+    "enhanced_descriptions": {
+        "details.ingredients_used.item": "This field lists the specific items used as ingredients, such as 'gold_ingot' and 'apple'.",
+        "details.crafted_item": "This field represents items that have been crafted in the game, such as a golden apple.",
+        "details.dropping.item": "This field represents the specific items being dropped, such as cobblestone, in the context of an event or action.",
+        "details.mob_type": "This field 'details.mob_type' specifies the type of mobile entity present in the game, such as a zombie.",
+        "details.block": "The 'details.block' field represents the material type of a block, such as stone, used in construction or design.",
+        "details.msg": "The 'details.msg' field captures messages related to player interactions and activities in the game, such as joining the game or initiating group events like raids.",
+        "loc.item.x": "This field represents the x-coordinate value of an item in a location, indicating its horizontal position, with example values like 105.",
+        "loc.y": "The 'loc.y' field represents the vertical coordinate values in a two-dimensional space, indicating positions such as 70, 64, and 63.",
+        "loc.item.z": "The 'loc.item.z' field represents the vertical position of an item in a three-dimensional space, measured in units such as meters, with values that can be negative, indicating depths below a reference point.",
+        "details.items_dropped.item": "This field lists the specific items that have been dropped, such as diamond pickaxes and iron helmets, during gameplay events.",
+        "loc.x": "The 'loc.x' field represents the horizontal coordinate values, indicating positions along the x-axis, with examples including 120, 150, and 100.",
+        "loc.z": "The 'loc.z' field represents the vertical position or elevation values, which can be negative, indicating depths below a defined zero level.",
+        "details.dropped_items.item": "This field lists the items that have been dropped, including various materials and resources like rotten flesh and iron ingots.",
+        "loc.item.servers.item.server_id": "This field 'loc.item.servers.item.server_id' uniquely identifies each server, represented by values like 'server_1'.",
+        "evnt": "The 'evnt' field captures various types of game events, including actions like breaking blocks, killing mobs, and player deaths.",
+        "details.tool": "The 'details.tool' field specifies the type of tool being used, such as a diamond pickaxe, indicating its material and function.",
+        "loc.item.y": "The 'loc.item.y' field represents the vertical coordinate or position of an item, measured in units such as pixels or meters, with values like 65 indicating the item's height on a defined scale.",
+        "details.cause": "The 'details.cause' field specifies the reason for an incident, such as injuries resulting from a fall.",
+        "details.chat_channel": "This field represents the type of chat channel, indicating whether it is a global channel accessible to all users or a specific one.",
+        "loc.item.servers.item.server_name": "This field represents the name of a server, with possible values including types like 'Survival'.",
+        "details.tool_used": "This field represents the specific tools or weapons utilized in activities, such as 'iron_sword'.",
+        "time": "The 'time' field represents timestamps in ISO 8601 format, indicating specific points in time with UTC time zone.",
+        "loc.item.servers.item.server_type": "This field indicates the type of server, such as Player vs Environment (PvE), used in the gaming or application context.",
+        "pid": "The 'pid' field represents unique identifiers for players, formatted as 'player_' followed by a numerical ID, such as 'player_12345'."
+    },
+    "semantic_clarity_report": {
+        "details.ingredients_used.item": {
+            "old_field_name": "details.ingredients_used.item",
+            "new_field_name": "List of Specific Ingredients Used in Recipes",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'List of Specific Ingredients Used in Recipes' is significantly clearer than 'details.ingredients_used.item'. It explicitly describes what the field contains and its purpose, making it easier for users to understand."
+        },
+        "details.crafted_item": {
+            "old_field_name": "details.crafted_item",
+            "new_field_name": "crafted_game_items",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'crafted_game_items' is significantly clearer than 'details.crafted_item' because it explicitly indicates that the items are game-related and have been crafted, thus improving the understanding of the field's content."
+        },
+        "details.dropping.item": {
+            "old_field_name": "details.dropping.item",
+            "new_field_name": "dropped_items_in_event_or_action",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'dropped_items_in_event_or_action' provides a much clearer understanding of its purpose compared to 'details.dropping.item'. It specifies that the field relates to items that are dropped during specific events or actions, making it more descriptive and informative."
+        },
+        "details.mob_type": {
+            "old_field_name": "details.mob_type",
+            "new_field_name": "game_entity_type",
+            "clarity_improvement_score": "3.0",
+            "justification": "The new field name 'game_entity_type' is more descriptive and specific than 'details.mob_type', as it clearly indicates that the field pertains to the type of entity within the game, encompassing a broader range of game entities beyond just mobs, which enhances clarity."
+        },
+        "details.block": {
+            "old_field_name": "details.block",
+            "new_field_name": "Material Type of Block Used in Construction or Design",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name \"Material Type of Block Used in Construction or Design\" is significantly clearer than the old field name \"details.block\". It explicitly describes what the field represents, making it easier for users to understand the type of data contained within."
+        },
+        "details.msg": {
+            "old_field_name": "details.msg",
+            "new_field_name": "Player Interaction and Activity Messages",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Player Interaction and Activity Messages' is significantly clearer than the old name 'details.msg' as it explicitly describes the content and purpose of the messages, making it easier for users to understand what type of data they can expect."
+        },
+        "loc.item.x": {
+            "old_field_name": "loc.item.x",
+            "new_field_name": "Item Horizontal Position X-Coordinate",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Item Horizontal Position X-Coordinate' is much clearer than the old name 'loc.item.x' as it explicitly describes the content and purpose of the field, making it easier for users to understand its meaning and use."
+        },
+        "loc.y": {
+            "old_field_name": "loc.y",
+            "new_field_name": "Vertical Coordinate Position in 2D Space",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Vertical Coordinate Position in 2D Space' is significantly clearer than the old field name 'loc.y'. It explicitly describes what the field represents, making it easy for users to understand its purpose without any ambiguity."
+        },
+        "loc.item.z": {
+            "old_field_name": "loc.item.z",
+            "new_field_name": "Vertical Position of Item in 3D Space (in meters)",
+            "clarity_improvement_score": "5.0",
+            "justification": "The new field name 'Vertical Position of Item in 3D Space (in meters)' provides a clear and specific description of what the field represents, making it much more understandable than the ambiguous old field name 'loc.item.z'."
+        },
+        "details.items_dropped.item": {
+            "old_field_name": "details.items_dropped.item",
+            "new_field_name": "List of Items Dropped During Gameplay Events (e.g., diamond pickaxes, iron helmets)",
+            "clarity_improvement_score": "5.0",
+            "justification": "The new field name 'List of Items Dropped During Gameplay Events' is significantly clearer than the old field name 'details.items_dropped.item'. It explicitly states what the content is (a list of items) and the context in which these items are dropped (during gameplay events), making it very informative for users."
+        },
+        "loc.x": {
+            "old_field_name": "loc.x",
+            "new_field_name": "Horizontal Position on X-Axis",
+            "clarity_improvement_score": "5.0",
+            "justification": "The new field name 'Horizontal Position on X-Axis' is significantly clearer than 'loc.x'. It explicitly describes what the data represents, making it easily understandable for users."
+        },
+        "loc.z": {
+            "old_field_name": "loc.z",
+            "new_field_name": "VerticalPositionOrElevationRelativeToZero",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'VerticalPositionOrElevationRelativeToZero' provides a clear and descriptive understanding of what the field represents, in contrast to the vague 'loc.z'. It specifies that the values indicate vertical position or elevation in relation to a zero reference point, which greatly enhances semantic clarity."
+        },
+        "details.dropped_items.item": {
+            "old_field_name": "details.dropped_items.item",
+            "new_field_name": "List of Dropped Items and Resources",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'List of Dropped Items and Resources' clearly describes the content of the field, making it more understandable compared to the old field name 'details.dropped_items.item', which is more technical and less intuitive."
+        },
+        "loc.item.servers.item.server_id": {
+            "old_field_name": "loc.item.servers.item.server_id",
+            "new_field_name": "unique_server_identifier",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'unique_server_identifier' is significantly clearer than the old name 'loc.item.servers.item.server_id'. The new name directly indicates that it is a unique identifier for a server, while the old name is overly technical and nested, making it harder to understand the purpose of the field."
+        },
+        "evnt": {
+            "old_field_name": "evnt",
+            "new_field_name": "Game Event Types and Actions",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Game Event Types and Actions' is much clearer than the old name 'evnt', as it explicitly describes the content and purpose of the field, making it easier for users to understand what types of events are included."
+        },
+        "details.tool": {
+            "old_field_name": "details.tool",
+            "new_field_name": "Type of Tool Being Used (e.g., Diamond Pickaxe)",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Type of Tool Being Used (e.g., Diamond Pickaxe)' is significantly clearer than the old field name 'details.tool'. It explicitly describes what type of information is expected, providing a concrete example which enhances understanding for users."
+        },
+        "loc.item.y": {
+            "old_field_name": "loc.item.y",
+            "new_field_name": "Item Vertical Position in Units (e.g., pixels or meters)",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Item Vertical Position in Units (e.g., pixels or meters)' provides a clear and specific description of the data it represents, unlike the old field name 'loc.item.y', which is ambiguous and lacks context. The new name clearly indicates that it refers to the vertical position of an item, including the measurement units, enhancing understanding and usability."
+        },
+        "details.cause": {
+            "old_field_name": "details.cause",
+            "new_field_name": "Incident Reason or Cause of Incident",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Incident Reason or Cause of Incident' is significantly clearer than 'details.cause'. It specifies that the field pertains to the reason or cause of an incident, whereas the old name is vague and does not convey the context effectively. This enhancement in specificity aids users in understanding the data's purpose more readily."
+        },
+        "details.chat_channel": {
+            "old_field_name": "details.chat_channel",
+            "new_field_name": "type_of_chat_channel_accessibility",
+            "clarity_improvement_score": "3.0",
+            "justification": "The new field name 'type_of_chat_channel_accessibility' provides a clearer indication of the nature of the data being stored. It specifies not only that it relates to a chat channel but also highlights the aspect of accessibility, which adds context and improves understanding compared to the more ambiguous 'details.chat_channel'."
+        },
+        "loc.item.servers.item.server_name": {
+            "old_field_name": "loc.item.servers.item.server_name",
+            "new_field_name": "Type of Gameplay Server (e.g., Survival, Creative, Adventure)",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Type of Gameplay Server (e.g., Survival, Creative, Adventure)' explicitly describes the type of server, making it immediately clear to the user what kind of information is being represented. In contrast, the old field name 'loc.item.servers.item.server_name' is vague and does not convey the specific nature of the server type."
+        },
+        "details.tool_used": {
+            "old_field_name": "details.tool_used",
+            "new_field_name": "specific_tools_or_weapons_used_in_activities",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'specific_tools_or_weapons_used_in_activities' is significantly clearer than the old field name 'details.tool_used'. It explicitly describes the exact nature of the data being captured, which is the specific tools or weapons utilized in activities, making it easier for users to understand what to expect from this field."
+        },
+        "time": {
+            "old_field_name": "time",
+            "new_field_name": "timestamp_in_ISO_8601_format_UTC",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'timestamp_in_ISO_8601_format_UTC' provides a clear and specific description of the data it contains, indicating both the format and the time zone. In contrast, the old field name 'time' is vague and does not convey any information about the format or context."
+        },
+        "loc.item.servers.item.server_type": {
+            "old_field_name": "loc.item.servers.item.server_type",
+            "new_field_name": "Type of Game Server (e.g., Player vs Environment, PvE)",
+            "clarity_improvement_score": "5.0",
+            "justification": "The new field name 'Type of Game Server (e.g., Player vs Environment, PvE)' is significantly clearer than the old field name 'loc.item.servers.item.server_type'. It provides an explicit description of what the field represents and includes an example, making it easier for users to understand its purpose and the type of data expected."
+        },
+        "pid": {
+            "old_field_name": "pid",
+            "new_field_name": "Unique Player Identifier (UPI)",
+            "clarity_improvement_score": "4.0",
+            "justification": "The new field name 'Unique Player Identifier (UPI)' clearly describes the purpose of the field, indicating that it uniquely identifies players. In contrast, 'pid' is vague and does not convey any specific meaning regarding its content."
+        }
+    }
+}
