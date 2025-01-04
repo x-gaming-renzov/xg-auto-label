@@ -64,11 +64,13 @@ def generate_description(GenerateCleanMetadataStates : GenerateCleanMetadataStat
             field_info.description = response.description
         return field_info
     
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = [executor.submit(generate_desc, field_info) for field_info in GenerateCleanMetadataStates.field_info_list]
+    with ThreadPoolExecutor() as executor:
         field_info_list = []
-        for future in as_completed(futures):
-            field_info_list.append(future.result())
+        #generate in batches of 3
+        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 3):
+            futures = [executor.submit(generate_desc, field_info) for field_info in GenerateCleanMetadataStates.field_info_list[i:i+3]]
+            for future in as_completed(futures):
+                field_info_list.append(future.result())
         GenerateCleanMetadataStates.field_info_list = field_info_list
     return GenerateCleanMetadataStates
 
@@ -87,11 +89,13 @@ def generate_field_name(GenerateCleanMetadataStates : GenerateCleanMetadataState
             field_info.new_name = response.new_name
         return field_info
     
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = [executor.submit(generate_field, field_info) for field_info in GenerateCleanMetadataStates.field_info_list]
+    with ThreadPoolExecutor() as executor:
         field_info_list = []
-        for future in as_completed(futures):
-            field_info_list.append(future.result())
+        #generate in batches of 3
+        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 3):
+            futures = [executor.submit(generate_field, field_info) for field_info in GenerateCleanMetadataStates.field_info_list[i:i+3]]
+            for future in as_completed(futures):
+                field_info_list.append(future.result())
         GenerateCleanMetadataStates.field_info_list = field_info_list
     return GenerateCleanMetadataStates
 
@@ -111,11 +115,13 @@ def access_semantic_clarity(GenerateCleanMetadataStates : GenerateCleanMetadataS
             field_info.semantic_justification = response.justification
         return field_info
     
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = [executor.submit(access_semantic, field_info) for field_info in GenerateCleanMetadataStates.field_info_list]
+    with ThreadPoolExecutor() as executor:
         field_info_list = []
-        for future in as_completed(futures):
-            field_info_list.append(future.result())
+        #generate in batches of 3
+        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 3):
+            futures = [executor.submit(access_semantic, field_info) for field_info in GenerateCleanMetadataStates.field_info_list[i:i+3]]
+            for future in as_completed(futures):
+                field_info_list.append(future.result())
         GenerateCleanMetadataStates.field_info_list = field_info_list
     return GenerateCleanMetadataStates
 
