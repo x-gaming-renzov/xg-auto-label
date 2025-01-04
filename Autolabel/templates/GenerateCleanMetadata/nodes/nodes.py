@@ -66,8 +66,8 @@ def generate_description(GenerateCleanMetadataStates : GenerateCleanMetadataStat
     
     with ThreadPoolExecutor() as executor:
         field_info_list = []
-        #generate in batches of 3
-        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 3):
+        #generate in batches of 8
+        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 8):
             futures = [executor.submit(generate_desc, field_info) for field_info in GenerateCleanMetadataStates.field_info_list[i:i+3]]
             for future in as_completed(futures):
                 field_info_list.append(future.result())
@@ -91,8 +91,8 @@ def generate_field_name(GenerateCleanMetadataStates : GenerateCleanMetadataState
     
     with ThreadPoolExecutor() as executor:
         field_info_list = []
-        #generate in batches of 3
-        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 3):
+        #generate in batches of 8
+        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 8):
             futures = [executor.submit(generate_field, field_info) for field_info in GenerateCleanMetadataStates.field_info_list[i:i+3]]
             for future in as_completed(futures):
                 field_info_list.append(future.result())
@@ -117,8 +117,8 @@ def access_semantic_clarity(GenerateCleanMetadataStates : GenerateCleanMetadataS
     
     with ThreadPoolExecutor() as executor:
         field_info_list = []
-        #generate in batches of 3
-        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 3):
+        #generate in batches of 8
+        for i in range(0, len(GenerateCleanMetadataStates.field_info_list), 8):
             futures = [executor.submit(access_semantic, field_info) for field_info in GenerateCleanMetadataStates.field_info_list[i:i+3]]
             for future in as_completed(futures):
                 field_info_list.append(future.result())
@@ -143,7 +143,7 @@ def regenerate_low_scoring_fields(GenerateCleanMetadataStates : GenerateCleanMet
             field_info.new_name = response.new_name
         return field_info
     
-    with ThreadPoolExecutor(max_workers=20) as executor:
+    with ThreadPoolExecutor() as executor:
         futures = [executor.submit(generate_field, field_info) for field_info in low_scoring_fields]
         field_info_list = []
         for future in as_completed(futures):
