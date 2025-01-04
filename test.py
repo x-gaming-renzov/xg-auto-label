@@ -63,6 +63,7 @@ def process_task_completion(task_id):
 
         # Handle task types
         if task_type == 'json':
+            prin
             data_url = task['data_url']
             kb_url = task['kb_url']
             r = requests.get(data_url)
@@ -170,6 +171,14 @@ def process_task_completion(task_id):
 
         xg_mongo_db['tasks'].update_one({'_id': task_id}, {'$set': {'status': 'paused', 'stage': 'complete', 'metadata_output': metadata_output}})
 
+        #upload to gcs
+        blob = bucket.blob(f'{user_id}/tasks/{task_id}/out.json')
+        #upload metadata_output to gcs
+        blob.upload_from_string(json.dumps(metadata_output), content_type='application/json')
+        blob.metadata = { "xg_live_ops" : "attachment", "content-disposition" : "attachment" }
+        blob.patch()
+        blob.content_disposition = f"attachment; filename='metadata.json'"
+        blob.patch()
 
         print(f"Task {task_id} completed successfully")
         print(f"Metadata output: {metadata_output}")
