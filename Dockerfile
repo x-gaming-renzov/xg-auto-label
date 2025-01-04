@@ -10,7 +10,7 @@ COPY .env .env
 COPY gcreds.json gcreds.json
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Expose the port (Cloud Run will override this)
 EXPOSE 8080
