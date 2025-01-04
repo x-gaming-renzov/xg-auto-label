@@ -54,29 +54,35 @@ class GenerateCleanMetadata:
                         })
         print(colored("Graph run successfully", "green"))
         
-        field_mapping = {}
-        enhanced_descriptions = {}
-        semantic_clarity_report = {}
+        field_mapping = []
+        enhanced_descriptions = []
+        semantic_clarity_report = []
 
         print(colored("Generating metadata", "cyan"))
 
         for fieldinfo in output['field_info_list']:
             if isinstance(fieldinfo, FieldInfo):
-                field_mapping[fieldinfo.old_name] = fieldinfo.new_name
-                enhanced_descriptions[fieldinfo.old_name] = fieldinfo.description
-                semantic_clarity_report[fieldinfo.old_name] = {
-                    "old_field_name" : fieldinfo.old_name,
-                    "new_field_name" : fieldinfo.new_name,
-                    "clarity_improvement_score" : fieldinfo.semantic_clarity_score,
-                    "justification" : fieldinfo.semantic_justification
-
-                }
+                field_mapping.append({
+                    "new_field_name": fieldinfo.new_name,
+                    "old_field_name": fieldinfo.old_name
+                })
+                enhanced_descriptions.append({
+                    "field_name": fieldinfo.old_name,
+                    "description": fieldinfo.description
+                })
+                semantic_clarity_report.append({
+                    "field_name": fieldinfo.old_name,
+                    "semantic_clarity_score": fieldinfo.semantic_clarity_score,
+                    "semantic_justification": fieldinfo.semantic_justification,
+                    "new_field_name": fieldinfo.new_name
+                })
         
         metadata_obj = {
                 "field_mapping": field_mapping,
                 "enhanced_descriptions": enhanced_descriptions,
                 "semantic_clarity_report": semantic_clarity_report,
             }
+
         
         print(colored("Metadata generated successfully", "green"))
         

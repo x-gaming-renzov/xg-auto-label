@@ -147,27 +147,8 @@ def process_task_completion(task_id):
 
         # Process task with graph runner
         generator = GenerateCleanMetadata(data_path=f"{task_path}/data.json", kb_path=f"{task_path}/kb.txt", cache_path=f"{task_path}/")
-        output = generator.run()
-        metadata_output = {
-            'field_mapping': [],
-            'enhanced_descriptions': [],
-            'semantic_clarity_report': []
-        }
-
-        for field in output['field_mapping']:
-            metadata_output['field_mapping'].append({
-                'new_field_name': output['field_mapping'][field],
-                'old_field_name': field,
-            })
+        metadata_output = generator.run()
         
-        for field in output['enhanced_descriptions']:
-            metadata_output['enhanced_descriptions'].append({
-                'field_name': field,
-                'description': output['enhanced_descriptions'][field],
-            })
-        for field in output['semantic_clarity_report']:
-            metadata_output['semantic_clarity_report'].append(output['semantic_clarity_report'][field])
-
         xg_mongo_db['tasks'].update_one({'_id': task_id}, {'$set': {'status': 'paused', 'stage': 'complete', 'metadata_output': metadata_output}})
 
         #upload to gcs
