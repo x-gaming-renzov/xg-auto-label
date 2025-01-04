@@ -158,6 +158,7 @@ def process_task_completion(task_id):
         blob.metadata = { "xg_live_ops" : "attachment", "content-disposition" : "attachment" }
         blob.patch()
         blob.content_disposition = f"attachment; filename=out.json"
+        blob.content_disposition = f"attachment; filename=out.json"
         blob.patch()
 
         print(f"Task {task_id} completed successfully")
@@ -168,4 +169,4 @@ def process_task_completion(task_id):
         print(f"Error processing task {task_id}: {e}")
         return 
 
-process_task_completion("eb36b4ba-3217-4da2-9f72-7db9e1920261")
+# process_task_completion("eb36b4ba-3217-4da2-9f72-7db9e1920261")
