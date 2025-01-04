@@ -81,6 +81,9 @@ def process_task_completion(task_id):
 
             with open(f"{task_path}/data.json", 'wb') as f:
                 f.write(r.content)
+                print(f"Data written to {task_path}/data.json")
+                print(f"KB written to {task_path}/kb.txt")
+                print(r.content)
 
         elif task_type == 'mongo':
             source_id = task['sourceID']
@@ -167,6 +170,9 @@ def process_task_completion(task_id):
 
         xg_mongo_db['tasks'].update_one({'_id': task_id}, {'$set': {'status': 'paused', 'stage': 'complete', 'metadata_output': metadata_output}})
 
+
+        print(f"Task {task_id} completed successfully")
+        print(f"Metadata output: {metadata_output}")
         return 
 
     except Exception as e:
