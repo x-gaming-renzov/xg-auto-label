@@ -63,7 +63,6 @@ def process_task_completion(task_id):
 
         # Handle task types
         if task_type == 'json':
-            prin
             data_url = task['data_url']
             kb_url = task['kb_url']
             r = requests.get(data_url)
@@ -174,10 +173,10 @@ def process_task_completion(task_id):
         #upload to gcs
         blob = bucket.blob(f'{user_id}/tasks/{task_id}/out.json')
         #upload metadata_output to gcs
-        blob.upload_from_string(json.dumps(metadata_output), content_type='application/json')
+        blob.upload_from_string(json.dumps(metadata_output,indent=4), content_type='application/json')
         blob.metadata = { "xg_live_ops" : "attachment", "content-disposition" : "attachment" }
         blob.patch()
-        blob.content_disposition = f"attachment; filename='out.json'"
+        blob.content_disposition = f"attachment; filename=out.json"
         blob.patch()
 
         print(f"Task {task_id} completed successfully")
