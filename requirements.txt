@@ -22,3 +22,6 @@ pymongo
 langchain-google-vertexai
 praw
 mem0ai
+flask
+ijson
+gunicorn
