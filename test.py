@@ -177,7 +177,7 @@ def process_task_completion(task_id):
         blob.upload_from_string(json.dumps(metadata_output), content_type='application/json')
         blob.metadata = { "xg_live_ops" : "attachment", "content-disposition" : "attachment" }
         blob.patch()
-        blob.content_disposition = f"attachment; filename='metadata.json'"
+        blob.content_disposition = f"attachment; filename='out.json'"
         blob.patch()
 
         print(f"Task {task_id} completed successfully")
@@ -188,4 +188,4 @@ def process_task_completion(task_id):
         traceback.print_exc()
         return 
 
-process_task_completion("eb36b4ba-3217-4da2-9f72-7db9e1920261")
+# process_task_completion("eb36b4ba-3217-4da2-9f72-7db9e1920261")
