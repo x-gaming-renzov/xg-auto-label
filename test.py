@@ -63,7 +63,6 @@ def process_task_completion(task_id):
 
         # Handle task types
         if task_type == 'json':
-            prin
             data_url = task['data_url']
             kb_url = task['kb_url']
             r = requests.get(data_url)
