@@ -165,7 +165,7 @@ def process_task_completion(task_id):
         return 
 
     except Exception as e:
-        traceback.print_exc()
+        print(f"Error processing task {task_id}: {e}")
         return 
 
 process_task_completion("eb36b4ba-3217-4da2-9f72-7db9e1920261")
