@@ -35,3 +35,7 @@ def process_task():
         return jsonify({"error": str(e)}), 500
 
 # The app is ready to be used with gunicorn without binding any ports or hosts
+
+# Run the application in local development server
+if __name__ == '__main__':
+    app.run(debug=True)

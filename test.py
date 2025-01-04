@@ -83,7 +83,6 @@ def process_task_completion(task_id):
                 f.write(r.content)
                 print(f"Data written to {task_path}/data.json")
                 print(f"KB written to {task_path}/kb.txt")
-                print(r.content)
 
         elif task_type == 'mongo':
             source_id = task['sourceID']

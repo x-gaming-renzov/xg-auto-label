@@ -26,26 +26,28 @@ def extract_keys_and_examples(file_path, num_examples=5):
     with open(file_path, 'r') as file:
         parser = ijson.parse(file)
         for prefix, event, value in parser:
-            # Only capture actual scalar values at the "leaf" level
+            # We only care about leaf-level scalar values.
             if event in ('string', 'number', 'boolean', 'null'):
-                # Exclude placeholders
+                # Exclude placeholders.
                 if value not in ('N/A', 'NaN', None):
-                    # Only store up to num_examples examples per field
+                    # Only store up to num_examples examples per field.
                     if len(field_examples[prefix]) < num_examples:
                         field_examples[prefix].add(str(value))
 
-    # Convert sets to lists
+    # Convert each set of examples into a list.
     field_examples_dict = {k: list(v) for k, v in field_examples.items()}
 
-    #if any key starts with item. remove that part from key string
-    temp = {}
-    for key in field_examples_dict:
-        if str(key).startswith('item.'):
-            temp[str(key)[5:]] = field_examples_dict[key]
-    
-    field_examples_dict = temp
-    print(field_examples_dict)
-    temp = None
+    # Clean up 'item.' prefix if present.
+    cleaned_dict = {}
+    for key, examples in field_examples_dict.items():
+        if key.startswith('item.'):
+            cleaned_dict[key[5:]] = examples
+        else:
+            cleaned_dict[key] = examples
+
+    field_examples_dict = cleaned_dict
+
+    print(f"Extracted {len(field_examples_dict)} unique field paths with examples.")
 
     # Generate the one-line "basic" descriptions for each field
     field_descriptions = generate_field_descriptions(field_examples_dict)
